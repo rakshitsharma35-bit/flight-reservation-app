@@ -27,6 +27,7 @@ systemctl start jenkins
 ## SonarQube Installation
 ```shell
 # Install and configure Database
+apt update 
 apt install openjdk-17-jdk -y
 apt install postgresql -y
 systemctl start postgresql
