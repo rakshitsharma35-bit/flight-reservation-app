@@ -15,11 +15,12 @@ pipeline{
                 '''
             }
         }
-        stage('deploy')
+        stage('deploy'){
             steps{
                 sh '''
                     aws s3 sync dist/ s3://cblkdfsfdsc-front12end-project-bux/
                 '''
             }
+        }
     }
 }
