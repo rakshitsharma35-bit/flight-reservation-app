@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+
+# Java
+target/
+
+# Env files
+.env
+application.properties
+
+# Logs
+*.log
+
+# Backup files
+*.save
