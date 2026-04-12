@@ -1,0 +1,103 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-04-12T15:09:16.136Z  INFO 16758 --- [FlightReservationApplication] [           main] c.s.f.FlightReservationApplication       : Starting FlightReservationApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 16758 (/root/flight-reservation-app/FlightReservationApplication/target/flightreservationApplication-0.0.1-SNAPSHOT.jar started by root in /root/flight-reservation-app/FlightReservationApplication)
+2026-04-12T15:09:16.142Z  INFO 16758 --- [FlightReservationApplication] [           main] c.s.f.FlightReservationApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-04-12T15:09:16.923Z  INFO 16758 --- [FlightReservationApplication] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-12T15:09:16.989Z  INFO 16758 --- [FlightReservationApplication] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2026-04-12T15:09:17.427Z  INFO 16758 --- [FlightReservationApplication] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-12T15:09:17.438Z  INFO 16758 --- [FlightReservationApplication] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-12T15:09:17.439Z  INFO 16758 --- [FlightReservationApplication] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-12T15:09:17.469Z  INFO 16758 --- [FlightReservationApplication] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-12T15:09:17.470Z  INFO 16758 --- [FlightReservationApplication] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1254 ms
+2026-04-12T15:09:17.613Z  INFO 16758 --- [FlightReservationApplication] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-12T15:09:17.666Z  INFO 16758 --- [FlightReservationApplication] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-12T15:09:17.699Z  INFO 16758 --- [FlightReservationApplication] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-12T15:09:17.966Z  INFO 16758 --- [FlightReservationApplication] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-12T15:09:18.000Z  INFO 16758 --- [FlightReservationApplication] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-12T15:09:18.171Z  INFO 16758 --- [FlightReservationApplication] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16ac4d3d
+2026-04-12T15:09:18.174Z  INFO 16758 --- [FlightReservationApplication] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-12T15:09:18.225Z  WARN 16758 --- [FlightReservationApplication] [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-04-12T15:09:19.102Z  INFO 16758 --- [FlightReservationApplication] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-12T15:09:19.173Z  INFO 16758 --- [FlightReservationApplication] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12T15:09:19.635Z  WARN 16758 --- [FlightReservationApplication] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12T15:09:19.655Z  INFO 16758 --- [FlightReservationApplication] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-04-12T15:09:20.220Z  INFO 16758 --- [FlightReservationApplication] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-12T15:09:20.235Z  INFO 16758 --- [FlightReservationApplication] [           main] c.s.f.FlightReservationApplication       : Started FlightReservationApplication in 4.626 seconds (process running for 5.227)
+2026-04-12T15:09:20.350Z DEBUG 16758 --- [FlightReservationApplication] [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:09:20.370Z DEBUG 16758 --- [FlightReservationApplication] [           main] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:09:40.414Z  INFO 16758 --- [FlightReservationApplication] [0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-12T15:09:40.414Z  INFO 16758 --- [FlightReservationApplication] [0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-12T15:09:40.415Z  INFO 16758 --- [FlightReservationApplication] [0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-12T15:16:51.714Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-9] org.hibernate.SQL                        : insert into user (age,contact_number,email,gender,password,username) values (?,?,?,?,?,?)
+Hibernate: insert into user (age,contact_number,email,gender,password,username) values (?,?,?,?,?,?)
+2026-04-12T15:16:51.734Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-9] org.hibernate.SQL                        : insert into user_roles (user_id,roles) values (?,?)
+Hibernate: insert into user_roles (user_id,roles) values (?,?)
+2026-04-12T15:17:01.834Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:01.835Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-2] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:01.836Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-2] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:07.193Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:07.195Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-1] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:07.196Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-1] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:08.406Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:08.408Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-3] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:08.409Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-3] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:08.899Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-4] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:08.901Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-4] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:08.902Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-4] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:09.095Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:09.098Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-5] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:09.099Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-5] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:22.286Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:22.292Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-6] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:22.293Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-6] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:23.797Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:17:23.799Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-7] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:17:23.801Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-7] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:21:31.428Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:21:31.430Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-8] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:21:31.432Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-8] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:23:33.442Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-9] org.hibernate.SQL                        : insert into user (age,contact_number,email,gender,password,username) values (?,?,?,?,?,?)
+Hibernate: insert into user (age,contact_number,email,gender,password,username) values (?,?,?,?,?,?)
+2026-04-12T15:23:33.444Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-9] org.hibernate.SQL                        : insert into user_roles (user_id,roles) values (?,?)
+Hibernate: insert into user_roles (user_id,roles) values (?,?)
+2026-04-12T15:23:41.999Z DEBUG 16758 --- [FlightReservationApplication] [.0-8080-exec-10] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,u1_0.username from user u1_0 where u1_0.username=?
+2026-04-12T15:23:42.001Z DEBUG 16758 --- [FlightReservationApplication] [.0-8080-exec-10] org.hibernate.SQL                        : select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+Hibernate: select r1_0.user_id,r1_0.roles from user_roles r1_0 where r1_0.user_id=?
+2026-04-12T15:23:42.272Z DEBUG 16758 --- [FlightReservationApplication] [0.0-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,r1_0.user_id,r1_0.roles,u1_0.username from user u1_0 left join user_roles r1_0 on u1_0.id=r1_0.user_id where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.age,u1_0.contact_number,u1_0.email,u1_0.gender,u1_0.password,r1_0.user_id,r1_0.roles,u1_0.username from user u1_0 left join user_roles r1_0 on u1_0.id=r1_0.user_id where u1_0.id=?
