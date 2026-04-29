@@ -3,14 +3,13 @@ kind: Service
 metadata:
   name: flight-reservation-service
   namespace: flight-reservation
-  labels:
-    app: flight-reservation-app
 spec:
   type: LoadBalancer
+  selector:
+    app: flight-reservation-app
   ports:
   - port: 80
     targetPort: 8080
-    protocol: TCP
-    name: http
-  selector:
-    app: flight-reservation-app 
+
+
+ 

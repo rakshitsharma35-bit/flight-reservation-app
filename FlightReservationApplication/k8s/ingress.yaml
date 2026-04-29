@@ -4,7 +4,6 @@ metadata:
   name: flight-reservation-ingress
   namespace: flight-reservation
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   ingressClassName: nginx
@@ -12,10 +11,17 @@ spec:
   - host: reservation.oncdecb24erp.shop
     http:
       paths:
+      - path: /login
+        pathType: Prefix
+        backend:
+          service:
+            name: flight-reservation-service
+            port:
+              number: 80
       - path: /
         pathType: Prefix
         backend:
           service:
             name: flight-reservation-service
             port:
-              number: 80 
+              number: 80

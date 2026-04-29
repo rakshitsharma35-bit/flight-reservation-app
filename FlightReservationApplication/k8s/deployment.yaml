@@ -3,10 +3,8 @@ kind: Deployment
 metadata:
   name: flight-reservation-app
   namespace: flight-reservation
-  labels:
-    app: flight-reservation-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: flight-reservation-app
@@ -17,14 +15,30 @@ spec:
     spec:
       containers:
       - name: flight-reservation-app
-        image: mayurwagh/flight-reservation-pls-18:latest
+        image: 56805/flight-reservation-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:mysql://terraform-20260429100748862000000002.c7i6oe8w0yg8.ap-south-1.rds.amazonaws.com:3306/flightdb?createDatabaseIfNotExist=true&useSSL=true&requireSSL=false
+        - name: SPRING_DATASOURCE_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: rds-secret
+              key: username
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: rds-secret
+              key: password
+        - name: SPRING_JPA_DATABASE_PLATFORM
+          value: org.hibernate.dialect.MySQLDialect
+
         resources:
           requests:
-            memory: "512Mi"
-            cpu: "250m"
+            memory: "256Mi"
+            cpu: "100m"
           limits:
-            memory: "1Gi"
-            cpu: "500m"
+            memory: "512Mi"
+            cpu: "300m"
