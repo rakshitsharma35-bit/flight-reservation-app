@@ -70,13 +70,13 @@ GitHub → Jenkins → Maven Build
 ## 📸 Screenshots
 
 ### 🚀 Jenkins Pipeline Success
-![Jenkins](screenshots/jenkins.png)
+![Jenkins](FlightReservationApplication/screenshots/jenkins.png)
 
 ### 🔍 SonarQube Quality Gate
-![SonarQube](screenshots/sonarqube.png)
+![SonarQube](FlightReservationApplication/screenshots/sonarqube.png)
 
 ### ☸️ Kubernetes Pods Running
-![Pods](screenshots/pods.png)
+![Pods](FlightReservationApplication/screenshots/pods.png)
 
 ---
 
